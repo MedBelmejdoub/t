@@ -1,10 +1,12 @@
 
 import "./App.css";
-
+import { UserForm } from "./Admin/UserForm";
 function App() {
   return (
     <div>
-      <form></form>
+      <form>
+        <UserForm/>
+      </form>
     </div>
   );
 }
