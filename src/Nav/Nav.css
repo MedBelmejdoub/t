@@ -1,7 +1,25 @@
-.nav{
+.nav-list {
+  width: 40%;
   display: flex;
-  min-width: 90%;
   align-items: center;
-  justify-content: space-evenly;
+  
+  
+  justify-content: space-between;
 }
- 
+.nav-bar{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  font-size: 50px;
+  color: #61dafb;
+  text-shadow: #61dafb 1px 2px 5px;
+}
+.nav-links{
+  list-style: none;
+  font-weight: bold;
+  color: #61dafb;
+  margin: 1rem;
+}
