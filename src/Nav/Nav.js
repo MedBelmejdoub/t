@@ -3,19 +3,19 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 export const Nav = () => {
   return (
-    <nav className="nav-bar">
-      <h3 className="nav-logo">LOGO</h3>
+    <nav>
+      <img className="nav-logo" src="../logo.png" alt=""/>
       <ul className="nav-list">
-        <Link  className="nav-links" to="/">
+        <Link to="/Home">
           <li>Home</li>
         </Link>
-        <Link  className="nav-links" to="/Stock">
+        <Link to="/Stock">
           <li>Stock</li>
         </Link>
-        <Link  className="nav-links" to="/Admin">
+        <Link to="/Admin">
           <li>Admin</li>
         </Link>
-        <Link  className="nav-links" to="/About">
+        <Link to="/About">
           <li>About</li>
         </Link>
       </ul>

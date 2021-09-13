@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 .App {
   text-align: center;
 }
-.nav-app{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #282c34;
-  min-height: 100vh;
-  color: white;
-}
+
 
 
