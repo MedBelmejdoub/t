@@ -5,7 +5,7 @@ export const UserList = () => {
     <div>
       <div>
         <User></User>
-      </div>sasdasdad
+      </div>
     </div>
   );
 };

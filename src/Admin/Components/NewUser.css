@@ -1,0 +1,67 @@
+.user-form {
+  width: 95%;
+  margin: auto;
+  background-color: peru;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.user-input {
+  padding: 1%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.user-password,
+.user-name {
+  font-size: 25px;
+  width: 45%;
+}
+.user-option {
+  font-size: 25px;
+  width: 50%;
+}
+.user-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 5% 0 0;
+  padding: 1%;
+}
+
+.add-btn {
+  border: none;
+  background-color: rgb(32, 30, 26);
+  color: rgb(201, 216, 230);
+  padding: 1%;
+  font-size: 25px;
+  margin: 0 1% 0 0;
+  border-radius: 5px;
+}
+.add-btn:hover {
+  background-color: rgb(201, 216, 230);
+  color: rgb(32, 30, 26);
+}
+
+.cancel-btn {
+  border: none;
+  background-color: rgb(32, 30, 26);
+  color: rgb(201, 216, 230);
+  padding: 1%;
+  font-size: 25px;
+  margin: 0 1% 0 0;
+  border-radius: 5px;
+}
+.cancel-btn:hover {
+  background-color: rgb(201, 216, 230);
+  color: rgb(32, 30, 26);
+}

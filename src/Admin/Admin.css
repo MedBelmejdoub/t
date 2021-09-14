@@ -1,0 +1,15 @@
+.new-btn{
+  border: none;
+  font-size: 50px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+}
+.admin-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-h2{
+  align-items: center;
+  justify-content: center;
+}
