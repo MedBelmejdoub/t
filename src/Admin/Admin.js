@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { UserList } from "./Components/UserList";
 import { NewUser } from "./Components/NewUser";
 import "./Admin.css";
-export const Admin = () => {
-  const [users, setUsers] = useState([]);
-  const [show, setShow] = useState(false);
 
+export const Admin = () => {
+  const [show, setShow] = useState(false);
+  const [newUser, setNewUser] = useState([]);
+  
+  const onNewTask = (users) => {
+    setNewUser(users);
+  };
   return (
     <div>
       <div className="admin-h2">
@@ -17,11 +21,11 @@ export const Admin = () => {
           type="button"
           onClick={() => setShow(!show)}
         >
-          ADD
+          New User
         </button>
-        {show ? <NewUser /> : null}
+        {show ? <NewUser onNewTask={onNewTask} /> : null}
       </div>
-      <UserList />
+      <UserList onNewUser={newUser} key={newUser.name} />
     </div>
   );
 };

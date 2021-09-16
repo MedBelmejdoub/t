@@ -1,15 +1,21 @@
 .new-btn{
   border: none;
-  font-size: 50px;
-  background-color: cornflowerblue;
+  font-size: 20px;
+  padding: 1%;
+  background-color:#ff9c3e;
   border-radius: 5px;
+  margin: 1%;
 }
 .admin-btn{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.new-btn:hover{
+
+background-color: rgb(78, 145, 233);
+}
 .admin-h2{
-  align-items: center;
-  justify-content: center;
+  padding: 1%;
+  text-align: center;
 }
