@@ -1,17 +1,19 @@
 .details {
-  background-color: rgb(231, 219, 193);
-  max-width: 50%;
-  margin: auto;
-  margin-bottom: 2px;
+  padding: 1rem;
+  margin: 1rem;
+  position: relative;
+  background: radial-gradient(
+    rgba(238, 207, 207, 0.5),
+    rgba(100, 100, 100, 0.9)
+  );
+  color: aliceblue;
   border-radius: 5px;
-  padding: 0 5% 0 5%;
 }
 .items {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  max-width: 100%;
-  margin: auto;
-  font-size: 15px;
+  
+}
+.role-user {
+  color: rgba(0, 185, 209, 0.9);
+  font-size: 30px;
+  font-weight: bold;
 }

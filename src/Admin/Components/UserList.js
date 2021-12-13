@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import User from "./User";
 
-export const UserList = ({ onNewUser, key }) => {
+export const UserList = ({ onNewUser, onDelete }) => {
+  // setUser({onNewUser});
+
   return (
-    <div>
-      <h1>
-        {onNewUser.map((prevUser) => (
-          <User
-            key={key}
-            name={prevUser.name}
-            password={prevUser.password}
-            role={prevUser.role}
-          />
-        ))}
-      </h1>
+    <div className="user-list">
+      {onNewUser.map((prevUser) => (
+        <User
+          key={prevUser.name}
+          name={prevUser.name}
+          password={prevUser.password}
+          role={prevUser.role}
+          onDelete={() => onDelete(prevUser.name)}
+        />
+      ))}
     </div>
   );
 };

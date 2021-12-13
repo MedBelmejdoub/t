@@ -7,14 +7,19 @@ export const Admin = () => {
   const [show, setShow] = useState(false);
   const [newUser, setNewUser] = useState([]);
   
-  const onNewTask = (users) => {
+  
+  const onSetNewUser = (users) => {
     setNewUser(users);
   };
+  const onDelete = (name) => {
+    const exactUser = [...newUser];
+    exactUser.splice(name, 1);
+    setNewUser(exactUser);
+  }
+  
   return (
     <div>
-      <div className="admin-h2">
-        <h2>User Page</h2>
-      </div>
+      
       <div className="admin-btn">
         <button
           className="new-btn"
@@ -23,9 +28,13 @@ export const Admin = () => {
         >
           New User
         </button>
-        {show ? <NewUser onNewTask={onNewTask} /> : null}
+        
       </div>
-      <UserList onNewUser={newUser} key={newUser.name} />
+      <div>
+        {show ? <NewUser  onSetNewUser={onSetNewUser} onNewUser={newUser}/> : null}
+      </div>
+      <span className="list-admin">
+      <UserList onNewUser={newUser} onDelete={onDelete} onSetNewUser={onSetNewUser}/></span>
     </div>
   );
 };

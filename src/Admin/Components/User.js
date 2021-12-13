@@ -1,15 +1,15 @@
 import React from "react";
 import "./User.css";
-const User = ({ key, name, password, role }) => {
+const User = ({  name, password, role, onDelete }) => {
   return (
     <>
-      <div className="details" key={key}>
+      <div className="details" >
         <div className="items">
           <input type="checkbox"/>
           <div className="name-user">{name}</div>
-          <div className="password-user">{password}</div>
+          {/* I need to hide the password and place it with stars  */}
           <div className="role-user">{role}</div>
-          <button className="delete-btn-user" type="submit">
+          <button className="delete-btn-user" type="button" onClick={onDelete}>
             Delete
           </button>
         </div>

@@ -1,0 +1,73 @@
+.Product_form{
+  
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
+  
+  margin: auto;
+  padding:10px;
+  background: radial-gradient(rgba(238, 207, 207,0.1), rgba(100, 100, 100,0.5));
+  border: rgb(61, 46, 46) solid 1px;
+  border-radius: 5px;
+}
+.Product_Type{
+  
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+.Input_Type{
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+.first_column{
+  justify-content: space-around;
+  border: rgb(61, 46, 46) solid 1px;
+  border-radius: 5px;
+  background: radial-gradient(rgba(238, 207, 207,0.1), rgba(100, 100, 100,0.5));
+}
+.Product_btn{
+  display: flex;
+  justify-content: center;
+  margin: 0 5% 0 0;
+  padding: 1%;
+}
+.Product_Add{
+  border: none;
+  background-color: #ff9c3e;
+  color: rgb(0, 0, 0);
+  padding: 1%;
+  font-size: 20px;
+  margin: 0 1% 0 0;
+  border-radius: 5px;
+  min-width: 10%;
+}
+.Product_Add:hover {
+  background-color: rgb(82, 150, 99);
+  color: rgb(0, 0, 0);
+}
+.Product_Cancel{
+  border: none;
+  background-color: #ff9c3e;
+  color: rgb(0, 0, 0);
+  padding: 1%;
+  margin: 0 0 0 1%;
+  font-size: 20px;
+  border-radius: 5px;
+  min-width: 10%;
+}
+.Product_Cancel:hover {
+  background-color: rgb(255, 91, 91);
+  color: rgb(32, 30, 26);
+}
+
+.h2_new_product{
+  margin: 0 0 10px 0;
+}

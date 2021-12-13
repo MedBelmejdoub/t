@@ -3,26 +3,35 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "./Home/Home";
 import { Stock } from "./Stock/Stock";
 import { Admin } from "./Admin/Admin";
+import { useState } from "react";
 // i will Import About Later
 function App() {
+  const [checked, setChecked]= useState(false);
+  
+  const ActivePage = ()=>{
+    if(checked === true){
+      // Set background green to prove that this link has been selected*
+      
+    }
+  }
   return (
-    <Router>
-      <div className="app">
+    <div className="app">
+      <Router>
         <header>
           <div className="logo-container">
             <img className="logo" src="../logo.png" alt="" />
           </div>
           <div className="links-container">
-            <Link className="nav-links" to="/Home">
+            <Link className="nav-links" onClick={()=> setChecked(!checked)}  to="/Home">
               Home
             </Link>
-            <Link className="nav-links" to="/Stock">
+            <Link className="nav-links" onClick={()=> setChecked(!checked)} to="/Stock">
               Stock
             </Link>
-            <Link className="nav-links" to="/Admin">
+            <Link className="nav-links" onClick={()=> setChecked(!checked)} to="/Admin">
               Admin
             </Link>
-            <Link className="nav-links" to="/About">
+            <Link className="nav-links" onClick={()=> setChecked(!checked)} to="/About">
               About
             </Link>
           </div>
@@ -34,8 +43,8 @@ function App() {
             <Route path="/Admin" component={Admin} />
           </Switch>
         </main>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
