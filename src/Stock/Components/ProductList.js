@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Product from "./Product";
 
 export const ProductList = ({ onNewProduct, onDelete }) => {
-  // setProduct({onNewProduct});
 
   return (
     <div className="Product-list">
@@ -18,7 +17,6 @@ export const ProductList = ({ onNewProduct, onDelete }) => {
           quantity={prevProduct.quantity}
           type={prevProduct.type}
           fournisseur={prevProduct.fournisseur}
-
           onDelete={() => onDelete(prevProduct.code)}
         />
       ))}

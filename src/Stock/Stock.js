@@ -1,11 +1,22 @@
 import React from "react";
 import { useState } from "react";
-import { Product } from "./Components/NewProduct";
+import { NewProduct } from "./Components/NewProduct";
+import { ProductList } from "./Components/ProductList";
 import "./Stock.css";
 
 export const Stock = () => {
   const [show, setShow] = useState(false);
-  const [onNewProduct, onSetNewProduct] = useState();
+  const [newProduct, setNewProduct] = useState([]);
+
+  const onSetNewProduct = (products) => {
+    setNewProduct(products);
+  };
+
+  const onDelete = (code) => {
+    const exactProduct = [...newProduct];
+    exactProduct.splice(code, 1);
+    setNewProduct(exactProduct);
+  };
   return (
     <div>
       <div className="Header_Stock">
@@ -16,20 +27,32 @@ export const Stock = () => {
         >
           New Product
         </button>
-        <input type="text" className="Search_Stock" name="" placeholder="Search" />
+        <input
+          type="text"
+          className="Search_Stock"
+          name=""
+          placeholder="Search"
+        />
       </div>
-      <div class="container-fluid">
-        <div class="row">
+      <div className="container-fluid">
+        <div className="row">
           {show ? (
-            <Product onSetNewProduct={onSetNewProduct} onNewProduct={onNewProduct} />
+            <NewProduct
+              onSetNewProduct={onSetNewProduct}
+              onNewProduct={newProduct}
+              setShow={setShow}
+            />
           ) : null}
         </div>
-        <div>
-          {/* Liste of all items */}
-          <div>
-            
-          </div>
-        </div>
+        {/* <NewProduct /> */}
+        <div>{/* Liste of all items */}</div>
+      </div>
+      <div>
+        <ProductList
+          onNewProduct={newProduct}
+          onDelete={onDelete}
+          onSetNewProduct={onSetNewProduct}
+        />
       </div>
     </div>
   );

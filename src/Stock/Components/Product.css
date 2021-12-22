@@ -1,0 +1,17 @@
+.items{
+  margin: 5px;
+  border: whitesmoke solid 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Product_item{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 5px;
+  padding : 5px;
+  border-radius: 5px;
+}
+.delete_btn_Product{
+  background-color: tomato;
+}

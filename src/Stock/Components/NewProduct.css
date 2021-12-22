@@ -36,36 +36,20 @@
 .Product_btn{
   display: flex;
   justify-content: center;
-  margin: 0 5% 0 0;
-  padding: 1%;
+  
 }
 .Product_Add{
   border: none;
   background-color: #ff9c3e;
   color: rgb(0, 0, 0);
-  padding: 1%;
+  padding: 2%;
   font-size: 20px;
-  margin: 0 1% 0 0;
   border-radius: 5px;
-  min-width: 10%;
+  width: auto;
 }
 .Product_Add:hover {
   background-color: rgb(82, 150, 99);
   color: rgb(0, 0, 0);
-}
-.Product_Cancel{
-  border: none;
-  background-color: #ff9c3e;
-  color: rgb(0, 0, 0);
-  padding: 1%;
-  margin: 0 0 0 1%;
-  font-size: 20px;
-  border-radius: 5px;
-  min-width: 10%;
-}
-.Product_Cancel:hover {
-  background-color: rgb(255, 91, 91);
-  color: rgb(32, 30, 26);
 }
 
 .h2_new_product{

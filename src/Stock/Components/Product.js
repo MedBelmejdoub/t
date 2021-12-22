@@ -1,34 +1,68 @@
 import React from "react";
 import "./Product.css";
-const Product = ({  code, reference, description, date, price, poI, quantity, type, fournisseur, onDelete }) => {
+
+const Product = ({
+  code,
+  reference,
+  description,
+  date,
+  price,
+  poI,
+  quantity,
+  type,
+  fournisseur,
+  onDelete,
+}) => {
   return (
     <>
-      <div className="Product_item" >
-        <div className="items">
-          <input type="checkbox"/>
+      <div className="">
+         <div className="items">
+          <input type="checkbox" />
           <div className="name-Product">{code}</div>
-          <div className="role-Product">{reference}</div>
-          <div className="role-Product">{description}</div>
+          <div className="Reference">{reference}</div>
+          <div className="Description">{description}</div>
 
-          <div className="role-Product">{date}</div>
+          <div className="Date">{date}</div>
 
+          <div className="Price">{price}</div>
 
-          <div className="role-Product">{price}</div>
+          <div className="PoI">{poI}</div>
 
-          <div className="role-Product">{reference}</div>
+          <div className="Quantity">{quantity}</div>
 
-          <div className="role-Product">{poI}</div>
+          <div className="Type">{type}</div>
+          <div className="Frounisseurs">{fournisseur}</div>
 
-          <div className="role-Product">{quantity}</div>
-
-          <div className="role-Product">{type}</div>
-          <div className="role-Product">{fournisseur}</div>
-
-
-          <button className="delete-btn-Product" type="button" onClick={onDelete}>
+          <button
+            className="delete-btn-Product"
+            type="button"
+            onClick={onDelete}
+          >
             Delete
           </button>
         </div>
+</div>
+        <div>
+          
+        <table className="Product_item">
+        <tr>this is the first line</tr>
+          <td>{code}</td>
+          <td>{reference}</td>
+
+          <td>{description}</td>
+
+          <td>{date}</td>
+
+          <td>{price}</td>
+          <td><button
+            className="delete_btn_Product"
+            type="button"
+            onClick={onDelete}
+          >
+            Delete
+          </button>
+          </td>
+        </table>
       </div>
     </>
   );
