@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "./Home/Home";
 import { Stock } from "./Stock/Stock";
 import { Admin } from "./Admin/Admin";
+import { About } from "./About/About";
 import { useState } from "react";
+import "./UII/btn.css";
 // i will Import About Later
 function App() {
   const [checked, setChecked]= useState(false);
@@ -14,24 +16,25 @@ function App() {
       
     }
   }
+  
   return (
     <div className="app">
       <Router>
-        <header>
+        <header className="nav_barre">
           <div className="logo-container">
             <img className="logo" src="../logo.png" alt="" />
           </div>
           <div className="links-container">
-            <Link className="nav-links" onClick={()=> setChecked(!checked)}  to="/Home">
+            <Link className="nav_btn" onClick={()=> setChecked(!checked)}  to="/Home">
               Home
             </Link>
-            <Link className="nav-links" onClick={()=> setChecked(!checked)} to="/Stock">
+            <Link className="nav_btn" onClick={()=> setChecked(!checked)} to="/Stock">
               Stock
             </Link>
-            <Link className="nav-links" onClick={()=> setChecked(!checked)} to="/Admin">
+            <Link className="nav_btn" onClick={()=> setChecked(!checked)} to="/Admin">
               Admin
             </Link>
-            <Link className="nav-links" onClick={()=> setChecked(!checked)} to="/About">
+            <Link className="nav_btn" onClick={()=> setChecked(!checked)} to="/About">
               About
             </Link>
           </div>
@@ -41,6 +44,7 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/Stock" component={Stock} />
             <Route path="/Admin" component={Admin} />
+            <Route path="/About" component={About} />
           </Switch>
         </main>
       </Router>

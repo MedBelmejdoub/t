@@ -1,5 +1,12 @@
-
-.user-list{
-  display: grid;
-  grid-template-columns: 150px 150px;
+.user_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
+  background-color: rgba(165, 158, 158, 0.452);
+  border-radius: 10px;
+  margin-top: 5px;
 }

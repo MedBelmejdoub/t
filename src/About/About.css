@@ -1,0 +1,11 @@
+/* this is the styles that i need to apply in the card of any item in the stock  */
+ .cards h1{
+  color: rgb(161, 63, 63);  
+} 
+.profile_pic{
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  
+  background-color: turquoise;
+}

@@ -33,8 +33,9 @@ export const Admin = () => {
       <div>
         {show ? <NewUser  onSetNewUser={onSetNewUser} onNewUser={newUser}/> : null}
       </div>
-      <span className="list-admin">
-      <UserList onNewUser={newUser} onDelete={onDelete} onSetNewUser={onSetNewUser}/></span>
+      <div className="list_admin">
+      <UserList onNewUser={newUser} onDelete={onDelete} onSetNewUser={onSetNewUser}/>
+      </div>
     </div>
   );
 };

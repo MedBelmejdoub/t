@@ -1,0 +1,40 @@
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: rgb(51, 204, 153);
+  opacity: 50%;
+  color: black;
+  transition-duration: 0.4s;
+  box-shadow: white 0 0 10px;
+}
+
+.nav_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin: 0;
+  width: 6rem;
+  padding: 8px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+}
+.nav_btn:hover {
+  color: rgb(51, 204, 153);
+  opacity: 50%;
+
+  transition-duration: 0.5s;
+  box-shadow: rgb(51, 204, 153)  0 0 10px;
+}

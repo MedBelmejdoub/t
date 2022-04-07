@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import User from "./User";
+import "./UserList.css";
 
 export const UserList = ({ onNewUser, onDelete }) => {
   // setUser({onNewUser});
 
   return (
-    <div className="user-list">
+    <div className="user_list">
       {onNewUser.map((prevUser) => (
         <User
           key={prevUser.name}

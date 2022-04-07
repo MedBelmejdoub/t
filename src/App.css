@@ -5,42 +5,37 @@
 }
 
 header {
-  border-radius: 5px;
   display: flex;
-  width: 90%;
-  height: 10vh;
-  margin: auto;
-  align-items: center;
-  background: radial-gradient(rgba(238, 207, 207, 0.5), rgba(100, 100, 100, 0.9));
 }
-.logo-container,.links-container{
+.logo-container,
+.links-container {
   display: flex;
-  
-  
 }
 
 .logo {
-  margin: 5px;
+  display: flex;
+  margin: 0 10px;
   width: 45px;
   height: 45px;
 }
 .logo-container {
-flex: 1;
+  flex: 1;
+
 }
 .links-container {
   flex: 1;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
-.nav-links{
+.nav-links {
   font-weight: bold;
-  margin: 0 10% 0 0;
-  text-decoration:none;
+  margin: 0 10px 0 0;
+  text-decoration: none;
   background-color: orange;
   padding: 5px;
   border-radius: 5px;
 }
 
-.nav-links:hover{
+.nav-links:hover {
   background-color: orangered;
 }

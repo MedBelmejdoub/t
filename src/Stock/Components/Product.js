@@ -16,7 +16,7 @@ const Product = ({
   return (
     <>
       <div className="">
-         <div className="items">
+         {/* <div className="items">
           <input type="checkbox" />
           <div className="name-Product">{code}</div>
           <div className="Reference">{reference}</div>
@@ -40,12 +40,12 @@ const Product = ({
           >
             Delete
           </button>
-        </div>
+        </div> */}
 </div>
         <div>
           
         <table className="Product_item">
-        <tr>this is the first line</tr>
+        <tr> <span> Code</span><span>Reference</span><span>Description</span> </tr>
           <td>{code}</td>
           <td>{reference}</td>
 

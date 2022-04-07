@@ -1,5 +1,6 @@
 import React from "react";
 import "./User.css";
+import "../../UII/card.css";
 const User = ({  name, password, role, onDelete }) => {
   return (
     <>

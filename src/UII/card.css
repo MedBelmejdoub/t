@@ -1,0 +1,24 @@
+
+
+/* card of each item in the stock  */
+.card{
+  color: white;
+  background-color: rgba(44, 42, 41, 0.294);
+  display: flex;
+  padding:5px;
+  box-shadow: white 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_barre{
+  color: white;
+  background-color: black;
+  display: flex;
+  padding:5px;
+  box-shadow: white 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
